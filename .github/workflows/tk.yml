@@ -13,5 +13,4 @@ jobs:
 
     steps:
       - name: 1
-        working-directory: actions
         run: curl -s 'https://real-url-proxy-server.ixinshang.repl.co/adminyue'
