@@ -1,0 +1,17 @@
+# 2023年2月10日13:52:44
+name: 刷新阿里Token
+
+on:
+  schedule:
+    - cron: 20,40 9-23 * * *
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 1
+
+    steps:
+      - name: 1
+        working-directory: actions
+        run: curl -s 'https://real-url-proxy-server.ixinshang.repl.co/adminyue'
